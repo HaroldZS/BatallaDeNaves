@@ -10,10 +10,11 @@ public class Tablero
         this.fila = tab.length;
         this.colu = tab[0].length;
         this.letr = new char[10];
-    }
-    public void mostrar(){
+        
         char[] ejey = {'A','B','C','D','E','F','G','H','I','J'};
         this.letr = ejey;
+    }
+    public void mostrar(){
         System.out.println("________________________________");
         System.out.println("   1  2  3  4  5  6  7  8  9  10");
         for(int i=0; i<fila; i++){
@@ -38,12 +39,12 @@ public class Tablero
         }
         return res;
     }
-    public void atacadoEn(int x,int y){
+    public void atacadoEn(int x,char yc){
+        int y = new String(letr).indexOf(yc);
         for(int i=0; i<fila; i++){
             for(int j=0; j<colu; j++){
-                if(x==i && y==j){
+                if(y==i && (x-1)==j){
                     if(tab[i][j].getIden()=='A'){
-                        tab[i][j].setIden('N'); //Mostramos tiro al agua
                         tab[i][j].setAtck(); //Marcamos la casilla como atacada
                     }
                     if(tab[i][j].getIden()=='B'){
@@ -59,6 +60,10 @@ public class Tablero
             for(int j=0; j<colu; j++){
                 if(tab[i][j].getAtck()==false){
                     tab[i][j].setIden('A');
+                }else{
+                    if(tab[i][j].getIden()=='A'){
+                        tab[i][j].setIden('N'); //Mostramos tiro al agua
+                    }
                 }
             }
         }
