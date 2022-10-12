@@ -1,12 +1,17 @@
 ------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all they need to know. The comments should usually include at least:
+JUEGO DE BATALLA NAVAL
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+TITULO DEL PROYECTO: Batalla Naval
+VERSION : Consola
+AUTOR: Harold Zurita Simon
+CARACTERÍSTICAS: BlueJ 5.0.2 y Window 10
+INSTRUCCIONES:
+
+- Abrir el Proyecto den BlueJ
+- Click derecho sobre la clase "Principal"
+- Seleccionar "new Principal()"
+- Se habrirá una interfaz de creación, hacer click en "Aceptar"
+- Click derecho en el objeto "Principal" que se ha creado de rojo
+  en la parte inferior del BlueJ
+- Seleccionar "void jugar()"

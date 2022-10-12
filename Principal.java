@@ -5,7 +5,7 @@ public class Principal
     private char cory; // Coordenada en y
     private boolean ganar = false;
     
-    public void prueba(){
+    public void jugar(){
         Casilla[][] mat = {
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
             {new Casilla('A',0),new Casilla('B',2),new Casilla('A',0),new Casilla('B',4),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
