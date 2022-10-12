@@ -1,4 +1,4 @@
-import java.util.Scanner;
+    import java.util.Scanner;
 public class Principal
 {
     private int corx; // Coordenada en x
@@ -53,51 +53,38 @@ public class Principal
             System.out.println("J1 Propio");
             t1.mostrar();
             System.out.println("J1 Radar");
-            
             radar1 = new Tablero(genRadar(t2.getTab()));
-
-
-            radar1.radar();
-            System.out.println("Harold Radar");
             radar1.mostrar();
             
             pedirXY(sc);
-            
-                        System.out.println("J2 Propio valor original harold");
-                        t2.mostrar();
-                        
+                            
             //J1 ataca a J2
             t2.atacadoEn(corx,cory);
-            
-                        System.out.println("J2 Propio valor");
-                        t1.mostrar();
             
             System.out.println("===============Interfaz J1================");
             System.out.println("J1 Propio");
             t1.mostrar();
             System.out.println("J1 Radar");
-            radar1 = t2;
-            radar1.radar();
+            radar1 = new Tablero(genRadar(t2.getTab()));
             radar1.mostrar();
             
             System.out.println("===============Interfaz J2================");
             System.out.println("J2 Propio");
             t2.mostrar();
             System.out.println("J2 Radar");
-            radar2 = t1;
-            radar2.radar();
+            radar2 = new Tablero(genRadar(t1.getTab()));
             radar2.mostrar();
+            
             pedirXY(sc);
         
             //J2 ataca a J1
-            
             t1.atacadoEn(corx,cory);
-            System.out.println("Jugador 2 ataca a Jugador 1 - Tablero propio Jugador 1");
-            t1.mostrar();
-        
-            radar2 = t1;
-            radar2.radar();
-            System.out.println("Radar Jugador 2");
+            
+            System.out.println("===============Interfaz J2================");
+            System.out.println("J2 Propio");
+            t2.mostrar();
+            System.out.println("J2 Radar");
+            radar2 = new Tablero(genRadar(t1.getTab()));
             radar2.mostrar();
         }
     }
