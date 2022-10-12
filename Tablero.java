@@ -28,7 +28,7 @@ public class Tablero implements Cloneable
         }
         System.out.println("--------------------------------");
     }
-        public boolean esGanador(){
+        public boolean esPerdedor(){
         boolean res = true;
         for(int i=0; i<fila; i++){
             for(int j=0; j<colu; j++){

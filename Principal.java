@@ -13,22 +13,22 @@ public class Principal
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',4),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',4),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('B',3),new Casilla('B',3),new Casilla('B',3),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
+            {new Casilla('A',0),new Casilla('B',6),new Casilla('B',6),new Casilla('B',6),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
             {new Casilla('A',0),new Casilla('A',0),new Casilla('B',3),new Casilla('B',3),new Casilla('B',3),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)}
         };
         Casilla[][] oMat = {
+            {new Casilla('B',6),new Casilla('B',6),new Casilla('B',6),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('B',2),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('B',2),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
-            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)}
+            {new Casilla('B',3),new Casilla('A',0),new Casilla('A',0),new Casilla('B',4),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
+            {new Casilla('B',3),new Casilla('A',0),new Casilla('A',0),new Casilla('B',4),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
+            {new Casilla('B',3),new Casilla('A',0),new Casilla('A',0),new Casilla('B',4),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
+            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',4),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
+            {new Casilla('A',0),new Casilla('B',2),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
+            {new Casilla('A',0),new Casilla('B',2),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
+            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
+            {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)}
         };
         
         Tablero radar1 = null;
@@ -56,6 +56,11 @@ public class Principal
             radar1 = new Tablero(genRadar(t2.getTab()));
             radar1.mostrar();
             
+            if(t1.esPerdedor()){
+                System.out.println("Ganó el jugador 2");
+                break;
+            }
+            
             pedirXY(sc);
                             
             //J1 ataca a J2
@@ -74,6 +79,11 @@ public class Principal
             System.out.println("J2 Radar");
             radar2 = new Tablero(genRadar(t1.getTab()));
             radar2.mostrar();
+            
+            if(t2.esPerdedor()){
+                System.out.println("Ganó el jugador 1");
+                break;
+            }
             
             pedirXY(sc);
         
