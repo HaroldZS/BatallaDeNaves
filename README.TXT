@@ -5,7 +5,7 @@ JUEGO DE BATALLA NAVAL
 TITULO DEL PROYECTO: Batalla Naval
 VERSION : Consola
 AUTOR: Harold Zurita Simon
-CARACTERÍSTICAS: BlueJ 5.0.2 y Window 10
+CARACTERÍSTICAS: BlueJ 5.0.2 y Windows 10
 INSTRUCCIONES:
 
 - Abrir el Proyecto den BlueJ

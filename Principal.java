@@ -34,6 +34,13 @@ public class Principal
         Tablero radar1 = null;
         Tablero radar2 = null;
         
+        int[][] nav1 = null;
+        int[][] nav2 = null;
+        int navDim= 0;
+        
+        corx= 100;
+        cory= 'Z';
+        
         //Scanner
         Scanner sc = new Scanner(System.in);
         
@@ -55,6 +62,13 @@ public class Principal
             System.out.println("J1 Radar");
             radar1 = new Tablero(genRadar(t2.getTab()));
             radar1.mostrar();
+            
+            if(corx != 100 && cory != 'Z'){
+                System.out.println("Valido");
+                nav1 = resumen(t1.getTab());
+                navDim = getBarcoDim(nav1,corx,cory);
+                existeHundido(nav1,navDim);
+            }
             
             if(t1.esPerdedor()){
                 System.out.println("Ganó el jugador 2");
@@ -79,6 +93,10 @@ public class Principal
             System.out.println("J2 Radar");
             radar2 = new Tablero(genRadar(t1.getTab()));
             radar2.mostrar();
+            
+            nav2 = resumen(t2.getTab());
+            navDim = getBarcoDim(nav2,corx,cory);
+            existeHundido(nav2,navDim);
             
             if(t2.esPerdedor()){
                 System.out.println("Ganó el jugador 1");
@@ -133,5 +151,56 @@ public class Principal
             }
         }
         return c;
+    }
+    private int[][] resumen(Casilla[][] a){
+        int[][] ar = {
+            {0,0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0,0},
+            {0,0,0,0,0,0,0,0,0,0}
+        };
+        for(int i=0; i< a.length; i++){
+            for(int j=0; j< a[0].length; j++){
+                if(a[i][j].getIden()=='X'){
+                    ar[i][j] = a[i][j].getDim();
+                }
+                }
+        }
+        
+        return ar;
+    }
+    private void imprimir(int[][] n){
+        for(int i=0; i< n.length; i++){
+            for(int j=0; j< n[0].length; j++){
+                System.out.print(n[i][j]+" ");
+            }
+            System.out.println("");
+        }
+    }
+    private int getBarcoDim(int[][] r, int x, char ay){
+        char[] eje = {'A','B','C','D','E','F','G','H','I','J'};
+        int y = new String(eje).indexOf(ay);
+        x=x-1;
+        
+        return r[y][x];
+    }
+    private void existeHundido(int[][] bar, int tam){
+        int cont = 0;
+        for(int i=0; i< bar.length; i++){
+            for(int j=0; j< bar[0].length; j++){
+                if(bar[i][j]==tam){
+                    cont= cont+1;
+                }
+            }
+        }
+        if(cont == tam){
+            System.out.println("HUNDIDOOOO!");
+        }
     }
 }
