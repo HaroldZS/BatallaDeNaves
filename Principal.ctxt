@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Principal
+comment1.params=
+comment1.target=void\ prueba()
+comment2.params=sc
+comment2.target=void\ pedirXY(java.util.Scanner)
+comment3.params=t
+comment3.target=Casilla[][]\ genRadar(Casilla[][])
+numComments=4

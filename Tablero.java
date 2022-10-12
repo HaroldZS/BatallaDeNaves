@@ -1,4 +1,4 @@
-public class Tablero
+public class Tablero implements Cloneable
 {
     private int fila;
     private int colu;
@@ -28,7 +28,7 @@ public class Tablero
         }
         System.out.println("--------------------------------");
     }
-    public boolean esGanador(){
+        public boolean esGanador(){
         boolean res = true;
         for(int i=0; i<fila; i++){
             for(int j=0; j<colu; j++){
@@ -67,5 +67,18 @@ public class Tablero
                 }
             }
         }
+    }
+    public Tablero clone() throws CloneNotSupportedException{
+        Tablero nuevo = (Tablero) super.clone();
+        return nuevo;
+    }
+    public int getFila(){
+        return fila;
+    }
+    public int getColu(){
+        return colu;
+    }
+    public Casilla[][] getTab(){
+        return tab;
     }
 }
