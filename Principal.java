@@ -64,10 +64,9 @@ public class Principal
             radar1.mostrar();
             
             if(corx != 100 && cory != 'Z'){
-                System.out.println("Valido");
                 nav1 = resumen(t1.getTab());
                 navDim = getBarcoDim(nav1,corx,cory);
-                existeHundido(nav1,navDim);
+                existeHundido(nav1,navDim,"J2","J1");
             }
             
             if(t1.esPerdedor()){
@@ -96,7 +95,7 @@ public class Principal
             
             nav2 = resumen(t2.getTab());
             navDim = getBarcoDim(nav2,corx,cory);
-            existeHundido(nav2,navDim);
+            existeHundido(nav2,navDim,"J1","J2");
             
             if(t2.esPerdedor()){
                 System.out.println("Ganó el jugador 1");
@@ -190,8 +189,10 @@ public class Principal
         
         return r[y][x];
     }
-    private void existeHundido(int[][] bar, int tam){
+    private void existeHundido(int[][] bar, int tam,String jugX, String jugY){
         int cont = 0;
+        String[] naves = {"destructor","submarino","acorazado","portaaviones"};
+        
         for(int i=0; i< bar.length; i++){
             for(int j=0; j< bar[0].length; j++){
                 if(bar[i][j]==tam){
@@ -199,8 +200,14 @@ public class Principal
                 }
             }
         }
-        if(cont == tam){
-            System.out.println("HUNDIDOOOO!");
+        if(tam == 6){
+            if(cont == 3){
+                System.out.println(jugX+" ha undido el crucero de "+jugY);
+            }
+        }else{
+            if(cont == tam){
+                System.out.println(jugX+" ha hundido el "+naves[cont-2]+" de "+jugY);
+            }
         }
     }
 }
