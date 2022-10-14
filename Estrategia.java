@@ -4,7 +4,11 @@ public class Estrategia
     private int px;
     private int py;
     private int pos;
-    public void iniciar()
+    private Tablero estPos;
+    public Estrategia(){
+        this.estPos = iniciar();
+    }
+    public Tablero iniciar()
     {
         Scanner scan = new Scanner(System.in);
         Casilla[][] base = {
@@ -30,6 +34,8 @@ public class Estrategia
         tabN.mostrar();
         tabN = new Tablero(colocarNave(scan, tabN.getTab(),"portaaviones",5));
         tabN.mostrar();
+        
+        return tabN;
     }
     public Casilla[][] colocarNave(Scanner sc, Casilla[][] bs, String nom, int dmn){
         System.out.println("Selecciona la posición del barco: 0 - Horizontal : 1 - Vertical");
@@ -90,5 +96,8 @@ public class Estrategia
         }
         System.out.println(" Ha colocado un "+nom);
         return bs;
+    }
+    public Tablero getT(){
+        return estPos;
     }
 }

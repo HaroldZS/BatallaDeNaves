@@ -6,6 +6,13 @@ public class Principal
     private boolean ganar = false;
     
     public void jugar(){
+        System.out.println("===============Interfaz J1================");
+        System.out.println("Estrategia J1 - Posicionar Naves");
+        Casilla[][] mat = new Estrategia().getT().getTab();
+        System.out.println("===============Interfaz J2================");
+        System.out.println("Estrategia J2 - Posicionar Naves");
+        Casilla[][] oMat = new Estrategia().getT().getTab();
+        /*
         Casilla[][] mat = {
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
             {new Casilla('A',0),new Casilla('B',2),new Casilla('A',0),new Casilla('B',4),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
@@ -30,6 +37,7 @@ public class Principal
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)},
             {new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('B',5),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0),new Casilla('A',0)}
         };
+        */
         
         Tablero radar1 = null;
         Tablero radar2 = null;
